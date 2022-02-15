@@ -21,3 +21,7 @@
 }
 
 ```
+# Iniciando desenvolvimento com styled components
+- Criando pasta /src para adicionar minhas screens e components
+- Criando a primeira screen
+  - Dashboard.tsx
