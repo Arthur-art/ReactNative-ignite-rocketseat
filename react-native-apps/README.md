@@ -29,3 +29,9 @@
 # Trabalhando com styled-components
 - yarn add styled-components
 - yarn add @types/styled-components-react-native -D
+
+# Criando pasta global onde será mantido os arquivos que serão compartilhados com toda a aplicação como o tema
+- /global/styles/theme.ts
+- Criando theme para a aplicação
+- Criando um ThemeProvider do styled component no arquivo App.tsx para envolver todos os apps como um contexto do theme
+- configurando um tipo para them no arquivo styled.d.ts
