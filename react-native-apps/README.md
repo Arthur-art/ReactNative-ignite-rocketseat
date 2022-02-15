@@ -21,7 +21,11 @@
 }
 
 ```
-# Iniciando desenvolvimento com styled components
+# Iniciando desenvolvimento do Dashboard
 - Criando pasta /src para adicionar minhas screens e components
 - Criando a primeira screen
   - Dashboard.tsx
+
+# Trabalhando com styled-components
+- yarn add styled-components
+- yarn add @types/styled-components-react-native -D
