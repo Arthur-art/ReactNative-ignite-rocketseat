@@ -35,3 +35,11 @@
 - Criando theme para a aplicação
 - Criando um ThemeProvider do styled component no arquivo App.tsx para envolver todos os apps como um contexto do theme
 - configurando um tipo para them no arquivo styled.d.ts
+
+# Trabalhando com fonts no react-native
+- expo install expo-font @expo-google-fonts/poppins
+- Configurando o uso de fonts no arquivo App.tsx
+- Trabalhando com expo-app-loading para lidar com o carregamento do splash enquanto as fonts não são carregadas
+  - expo install expo-app-loading
+- Adicionando fonts no theme.ts
+  - Adicionando font instalada ao font-family do Dashboard
