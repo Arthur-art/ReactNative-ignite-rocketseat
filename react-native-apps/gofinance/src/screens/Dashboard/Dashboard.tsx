@@ -1,11 +1,17 @@
 import React from "react"
-import { Container, Title } from "./styles"
+import { Text } from "react-native"
+import { 
+  Container,
+  Header
+} from "./styles"
 
 export const Dashboard = ()=>{
 
     return (
         <Container>
-            <Title>Dashboard</Title>
+            <Header>
+                <Text>Arthur</Text>
+            </Header>
         </Container>
     )
 }

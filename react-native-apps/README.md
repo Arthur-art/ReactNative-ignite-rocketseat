@@ -43,3 +43,8 @@
   - expo install expo-app-loading
 - Adicionando fonts no theme.ts
   - Adicionando font instalada ao font-family do Dashboard
+
+# Desenvolvendo Header do Dashboard
+- Trabalhando com lib react-native-responsive-fontsize para lidar com intensidade de pixels em diferentes dispositivos
+  - yarn add react-native-responsive-fontsize
+  - Implementando react-native-responsive no styles.ts do Dashboard
