@@ -52,3 +52,5 @@
 # Trabalhando com icons no react native
 - lib padrão do react-native ("@expo/vector-icons")
 - Link para doc do expo/vector-icons: https://icons.expo.fyi/
+
+# Desenvolvendo component HighlightCard

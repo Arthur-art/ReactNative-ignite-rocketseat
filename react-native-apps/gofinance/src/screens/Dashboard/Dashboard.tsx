@@ -1,4 +1,5 @@
 import React from "react"
+import { HighLightCard } from "../../components/HighlightCard/HighlightCard"
 import { 
   Container,
   Header,
@@ -11,7 +12,7 @@ import {
   Icon,
 } from "./styles"
 
-export const Dashboard = ()=>{
+export const Dashboard = () => {
 
 
     return (
@@ -25,9 +26,10 @@ export const Dashboard = ()=>{
                                 <UserName>Arthur</UserName>
                         </User>
                     </UserInfo>
-                    <Icon name="poweroff" size={24}  />
+                    <Icon name="power"  />
                </UserWrapper>
             </Header>
+            <HighLightCard />
         </Container>
     )
 }   
