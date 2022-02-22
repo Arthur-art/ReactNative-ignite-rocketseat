@@ -1,5 +1,11 @@
 import styled from "styled-components/native";
 import {RFPercentage, RFValue} from "react-native-responsive-fontsize";
+import { AntDesign } from "@expo/vector-icons"
+
+export const Icon = styled(AntDesign)`
+    color: ${({theme}) => theme.colors.secondary};
+    font-size: ${RFValue(24)}px;
+`;
 
 export const Container = styled.View`
     flex: 1;
@@ -19,6 +25,10 @@ export const UserWrapper = styled.View`
     width: 100%;
     padding-right: ${RFValue(24)}px;
     padding-left: ${RFValue(24)}px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 export const UserInfo = styled.View`

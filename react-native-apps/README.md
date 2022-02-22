@@ -48,3 +48,7 @@
 - Trabalhando com lib react-native-responsive-fontsize para lidar com intensidade de pixels em diferentes dispositivos
   - yarn add react-native-responsive-fontsize
   - Implementando react-native-responsive no styles.ts do Dashboard
+
+# Trabalhando com icons no react native
+- lib padrão do react-native ("@expo/vector-icons")
+- Link para doc do expo/vector-icons: https://icons.expo.fyi/
