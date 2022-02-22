@@ -10,6 +10,7 @@ import {
   UserGreating,
   UserName,
   Icon,
+  HighlightCards,
 } from "./styles"
 
 export const Dashboard = () => {
@@ -29,7 +30,11 @@ export const Dashboard = () => {
                     <Icon name="power"  />
                </UserWrapper>
             </Header>
-            <HighLightCard />
+            <HighlightCards>
+                <HighLightCard />
+                <HighLightCard />
+                <HighLightCard />
+            </HighlightCards>
         </Container>
     )
 }   

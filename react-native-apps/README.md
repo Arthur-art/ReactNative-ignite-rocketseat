@@ -54,3 +54,5 @@
 - Link para doc do expo/vector-icons: https://icons.expo.fyi/
 
 # Desenvolvendo component HighlightCard
+- Trabalhando com ScrowView no Dashboard para lidar com rolamento das Views
+- Acessando propriedade do ScrowView pelo metodo "attrs" do styled component
