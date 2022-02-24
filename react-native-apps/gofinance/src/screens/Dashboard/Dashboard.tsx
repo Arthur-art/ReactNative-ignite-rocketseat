@@ -1,5 +1,5 @@
-import React from "react"
-import { HighLightCard } from "../../components/HighlightCard/HighlightCard"
+import React from 'react'
+import { HighLightCard } from '../../components/HighlightCard/HighlightCard'
 import { 
   Container,
   Header,
@@ -11,7 +11,7 @@ import {
   UserName,
   Icon,
   HighlightCards,
-} from "./styles"
+} from './styles'
 
 export const Dashboard = () => {
 
@@ -21,13 +21,13 @@ export const Dashboard = () => {
             <Header>
                <UserWrapper>
                     <UserInfo>
-                        <Photo source={{ uri:"https://avatars.githubusercontent.com/u/54858003?v=4"}}/>
+                        <Photo source={{ uri:'https://avatars.githubusercontent.com/u/54858003?v=4'}}/>
                         <User>
                             <UserGreating>Olá</UserGreating>
                                 <UserName>Arthur</UserName>
                         </User>
                     </UserInfo>
-                    <Icon name="power"  />
+                    <Icon name='power'  />
                </UserWrapper>
             </Header>
             <HighlightCards>

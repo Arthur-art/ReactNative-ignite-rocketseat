@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { 
     Container,
     Header,
@@ -7,7 +7,7 @@ import {
     Footer,
     Amount,
     LastTransaction
- } from "./styles";
+ } from './styles';
 
 export const HighLightCard = () => {
 
@@ -15,7 +15,7 @@ export const HighLightCard = () => {
         <Container>
             <Header>
                 <Title>Entrada</Title> 
-                <Icon name="arrow-up-circle"/>
+                <Icon name='arrow-up-circle'/>
             </Header>
             <Footer>
                 <Amount>R$ 17.400,00</Amount>
