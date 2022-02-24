@@ -71,3 +71,16 @@ export const HighlightCards = styled.ScrollView.attrs({
     position: absolute;
     margin-top: ${RFPercentage(20)}px;
 `;
+
+//flex: 1; para que a View ocupe todo o espaço disponível
+export const Transactions = styled.View`
+    flex: 1;
+    padding: 0 24px;
+    margin-top: ${RFPercentage(20)}px;
+    background: ${({theme}) => theme.colors.background};
+`;
+
+export const Title = styled.Text`
+    font-size: ${RFValue(18)}px;
+    font-family: ${({theme}) => theme.fonts.regular};
+`;
