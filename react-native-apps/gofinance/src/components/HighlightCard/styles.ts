@@ -2,6 +2,10 @@ import styled from 'styled-components/native';
 import {RFValue} from 'react-native-responsive-fontsize'
 import {Feather} from '@expo/vector-icons';
 
+interface IProps {
+    type: 'up' | 'down' | 'total';
+}
+
 export const Container = styled.View`
     background-color: ${({theme}) => theme.colors.shape};
     width: ${RFValue(300)}px;
@@ -19,9 +23,10 @@ export const Title = styled.Text`
     font-family: ${({theme}) => theme.fonts.regular};
     font-size: ${RFValue(14)}px;
 `;
-export const Icon = styled(Feather)`
+export const Icon = styled(Feather)<IProps>`
     font-size: ${RFValue(40)}px;
     color: ${({theme}) => theme.colors.success};
+    ${(props) => props.type === 'down' && ` color: ${props.theme.colors.attention}`}
 `;
 export const Footer = styled.View`
 

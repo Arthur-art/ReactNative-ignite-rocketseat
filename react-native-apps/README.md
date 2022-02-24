@@ -60,3 +60,18 @@
 # Trabalhando com lib react-native-iphone-x-helper para lidar com responsividade no header do iphone X em diante
 - yarn add react-native-iphone-x-helper
 - implementando react-native-iphone-x-helper no styles.ts da screen Dashboard
+
+# Tipando e acessando propriedades no Styled Components no arquivo styles do HighlightCard
+```js
+interface IProps {
+    type: 'up' | 'down' | 'total';
+}
+
+export const Icon = styled(Feather)<IProps>`
+    font-size: ${RFValue(40)}px;
+    color: ${({theme}) => theme.colors.success};
+    ${(props) => props.type === 'down' && ` color: ${props.theme.colors.attention}`}
+`;
+
+<Icon name={icon[type]} type={type}/>
+```
