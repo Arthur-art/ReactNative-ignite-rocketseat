@@ -56,3 +56,7 @@
 # Desenvolvendo component HighlightCard
 - Trabalhando com ScrowView no Dashboard para lidar com rolamento das Views
 - Acessando propriedade do ScrowView pelo metodo "attrs" do styled component
+
+# Trabalhando com lib react-native-iphone-x-helper para lidar com responsividade no header do iphone X em diante
+- yarn add react-native-iphone-x-helper
+- implementando react-native-iphone-x-helper no styles.ts da screen Dashboard
