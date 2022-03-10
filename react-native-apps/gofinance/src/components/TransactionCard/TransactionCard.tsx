@@ -15,24 +15,27 @@ import {
      icon: string;
  }
 
- type Props ={
-    data:{
+ type Data ={
+    type: 'positive' | 'negative';
     title: string;
     amount: string;
     category: Category;
     date: string;
     }
+
+ type Props ={
+    data: Data
  }
 
 export const TransactionCard = ({data}:Props) =>{
     
-    const {amount,category,date,title } = data;
+    const {amount,category,date,title,type } = data;
 
     return (
         <Container>
             <Title>{title}</Title>
             
-            <Amount>{amount}</Amount>
+            <Amount type={type}>{amount}</Amount>
 
             <Footer>
                 <Category>
