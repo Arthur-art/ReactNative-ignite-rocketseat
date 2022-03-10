@@ -78,3 +78,4 @@ export const Icon = styled(Feather)<IProps>`
 
 # Desenvolvendo Cartões das transações
 - Trabalhando com Flatlist e a lib react-native-iphone-x-helper para lidar com espaços do iphone
+- Criando uma nova tipagem personalizada para o Flatlist no arquivo styles do Dashboard

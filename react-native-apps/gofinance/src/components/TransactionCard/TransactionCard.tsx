@@ -15,7 +15,7 @@ import {
      icon: string;
  }
 
- type Data ={
+ export interface TransactionCardProps {
     type: 'positive' | 'negative';
     title: string;
     amount: string;
@@ -23,8 +23,8 @@ import {
     date: string;
     }
 
- type Props ={
-    data: Data
+ export type Props ={
+    data: TransactionCardProps
  }
 
 export const TransactionCard = ({data}:Props) =>{
@@ -35,7 +35,10 @@ export const TransactionCard = ({data}:Props) =>{
         <Container>
             <Title>{title}</Title>
             
-            <Amount type={type}>{amount}</Amount>
+            <Amount type={type}>
+                {type === 'negative' ? '- ' : ''}
+                {amount}
+            </Amount>
 
             <Footer>
                 <Category>

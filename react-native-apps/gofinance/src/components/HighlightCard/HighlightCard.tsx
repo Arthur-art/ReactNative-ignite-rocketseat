@@ -31,7 +31,7 @@ export const HighLightCard = ({title, amount, lastTransaction, type}:Props) => {
                <Icon name={icon[type]} type={type}/>
             </Header>
             <Footer>
-                <Amount>R${amount}</Amount>
+                <Amount type={type}>R${amount}</Amount>
                 <LastTransaction>{lastTransaction}</LastTransaction>
             </Footer>
         </Container>

@@ -31,11 +31,12 @@ export const Icon = styled(Feather)<IProps>`
 export const Footer = styled.View`
 
 `;
-export const Amount = styled.Text`
+export const Amount = styled.Text<IProps>`
     margin-top: 38px;
     font-family: ${({theme}) => theme.fonts.medium};
     font-size: ${RFValue(32)}px;
     color: ${({theme})=> theme.colors.text_dark};
+    ${(props) => props.type === 'down' ? ` color: ${props.theme.colors.attention}` : `color: ${props.theme.colors.success}`}
 `;
 export const LastTransaction = styled.Text`
     font-family: ${({theme})=> theme.fonts.regular};
