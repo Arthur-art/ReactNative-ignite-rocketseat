@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text } from 'react-native'
-import { Container, Header, Title } from './styles'
+import { Input } from '../../components/Forms/Input/Input'
+import { Container, Form, Header, Title } from './styles'
 
 export const Register = () =>{
 
@@ -9,6 +10,12 @@ export const Register = () =>{
             <Header>
                 <Title>Cadastro</Title>
             </Header>
+
+            <Form>
+                <Input placeholder='Nome'/>
+                <Input placeholder='Preço'/>
+            </Form>
+            
         </Container>
     )
 }
