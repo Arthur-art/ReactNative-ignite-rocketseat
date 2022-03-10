@@ -28,4 +28,9 @@ export const Form = styled.View`
     width: 100%;
 
     padding: 24px;
+    justify-content: space-between;
+    margin-bottom: ${getStatusBarHeight()};
+`;
+
+export const Fields = styled.View`
 `;
