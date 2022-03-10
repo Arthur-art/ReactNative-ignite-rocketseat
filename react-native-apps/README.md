@@ -82,3 +82,5 @@ export const Icon = styled(Feather)<IProps>`
 
 # Desenvolvendo Screen Register
 - Criando uma pasta chamada forms para guardar tudo relacionado a formulario
+- Desenvolvendo component Button e Input
+- Desenvolvendo component TransactionTypeButton
