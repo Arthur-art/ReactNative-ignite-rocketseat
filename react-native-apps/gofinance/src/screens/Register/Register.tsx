@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text } from 'react-native'
+import { Button } from '../../components/Forms/Button/Button'
 import { Input } from '../../components/Forms/Input/Input'
 import { Container, Form, Header, Title } from './styles'
 
@@ -14,6 +15,7 @@ export const Register = () =>{
             <Form>
                 <Input placeholder='Nome'/>
                 <Input placeholder='Preço'/>
+                <Button title='Enviar'/>
             </Form>
             
         </Container>
