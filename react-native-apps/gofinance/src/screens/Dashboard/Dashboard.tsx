@@ -13,11 +13,22 @@ import {
   Icon,
   HighlightCards,
   Transactions,
-  Title
+  Title,
+  TransactionsList
 } from './styles'
 
 export const Dashboard = () => {
 
+    const category = {
+        name: 'Vendas',
+        icon: 'dollar-sign'
+    }
+    const data = [{
+        amount:'R$17000,00',
+        category: category,
+        date:"10/03/2022",
+        title:"Desenvolvimento de site"
+    }]
 
     return (
         <Container>
@@ -40,8 +51,10 @@ export const Dashboard = () => {
             </HighlightCards>
             <Transactions>
                 <Title>Listagem</Title>
-
-                <TransactionCard />
+                <TransactionsList
+                    data={data}
+                    renderItem={({item}) => <TransactionCard data={item} />}
+                />
             </Transactions>
         </Container>
     )

@@ -10,20 +10,36 @@ import {
     Date,
  } from "./styles";
 
-export const TransactionCard = () =>{
+ type Category = {
+     name: string;
+     icon: string;
+ }
+
+ type Props ={
+    data:{
+    title: string;
+    amount: string;
+    category: Category;
+    date: string;
+    }
+ }
+
+export const TransactionCard = ({data}:Props) =>{
     
+    const {amount,category,date,title } = data;
+
     return (
         <Container>
-            <Title>Desenvolvimento de site</Title>
+            <Title>{title}</Title>
             
-            <Amount>{10000}</Amount>
+            <Amount>{amount}</Amount>
 
             <Footer>
                 <Category>
-                    <Icon name='dollar-sign' />
-                    <CategoryName>Vendas</CategoryName>
+                    <Icon name={category.icon} />
+                    <CategoryName>{category.name}</CategoryName>
                 </Category>
-                <Date>24/02/2022</Date>
+                <Date>{date}</Date>
             </Footer>
         </Container>
     )
