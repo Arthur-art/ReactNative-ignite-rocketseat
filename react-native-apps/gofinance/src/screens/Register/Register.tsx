@@ -17,7 +17,7 @@ export const Register = () =>{
                 <Fields>
                     <Input placeholder='Nome'/>
                     <Input placeholder='Preço'/>
-                    <TransactionTypeButton title='' type='up'/>
+                    <TransactionTypeButton title='Income' type='up'/>
                 </Fields>
                 <Button title='Enviar'/>
             </Form>

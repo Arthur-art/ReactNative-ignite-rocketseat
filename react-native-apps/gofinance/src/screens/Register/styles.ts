@@ -29,7 +29,7 @@ export const Form = styled.View`
 
     padding: 24px;
     justify-content: space-between;
-    margin-bottom: ${getStatusBarHeight()};
+    margin-bottom: ${getStatusBarHeight()}px;};
 `;
 
 export const Fields = styled.View`
