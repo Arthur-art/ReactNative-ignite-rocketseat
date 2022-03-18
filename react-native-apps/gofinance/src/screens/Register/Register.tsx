@@ -1,11 +1,16 @@
-import React from 'react'
-import { Text } from 'react-native'
+import React, { useState } from 'react'
 import { Button } from '../../components/Forms/Button/Button'
 import { Input } from '../../components/Forms/Input/Input'
 import { TransactionTypeButton } from '../../components/Forms/TransactionTypeButton/TransactionTypeButton'
-import { Container, Fields, Form, Header, Title } from './styles'
+import { Container, Fields, Form, Header, Title, TransactionsType } from './styles'
 
 export const Register = () =>{
+
+    const [transactionsType, setTransactionsType] = useState('');
+
+    const handleTransactionTypeSelect = (type: 'up' | 'down') =>{
+        setTransactionsType(type);
+    }
 
     return (
         <Container>
@@ -17,7 +22,16 @@ export const Register = () =>{
                 <Fields>
                     <Input placeholder='Nome'/>
                     <Input placeholder='Preço'/>
-                    <TransactionTypeButton title='Income' type='up'/>
+                    <TransactionsType>
+                        <TransactionTypeButton
+                         onPress={() => handleTransactionTypeSelect('up')}
+                         isActive={transactionsType === 'up'}
+                         title='Income' type='up'/>
+                        <TransactionTypeButton
+                         onPress={() => handleTransactionTypeSelect('down')}
+                         isActive={transactionsType === 'down'}
+                         title='Outcome' type='down'/>
+                    </TransactionsType>
                 </Fields>
                 <Button title='Enviar'/>
             </Form>
