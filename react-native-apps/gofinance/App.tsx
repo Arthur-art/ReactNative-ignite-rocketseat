@@ -10,6 +10,7 @@ import {
 import AppLoading from 'expo-app-loading';
 import { Dashboard } from './src/screens/Dashboard/Dashboard';
 import { Register } from './src/screens/Register/Register';
+import { CategorySelect } from './src/screens/CategorySelect/CategorySelect';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,7 +26,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-     <Register />
+     <CategorySelect  />
     </ThemeProvider>
   );
 }
