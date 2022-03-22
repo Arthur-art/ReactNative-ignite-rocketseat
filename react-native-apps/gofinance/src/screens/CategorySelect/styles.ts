@@ -49,3 +49,8 @@ export const Separator = styled.Text`
     height: 1px;
     width: 100%;
 `;
+
+export const Footer = styled.View`
+    width: 100%;
+    padding: 24px;
+`;
