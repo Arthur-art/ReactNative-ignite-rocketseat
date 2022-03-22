@@ -50,7 +50,7 @@ export const Register = () =>{
                          title='Outcome' type='down'/>
                     </TransactionsType>
 
-                    <CategorySelectButton onPress={handleOpenSelectCategoryModal} title='Categoria' />
+                    <CategorySelectButton onPress={handleOpenSelectCategoryModal} title={category.name} />
                 </Fields>
                 <Button title='Enviar'/>
             </Form>
