@@ -84,3 +84,9 @@ export const Icon = styled(Feather)<IProps>`
 - Criando uma pasta chamada forms para guardar tudo relacionado a formulario
 - Desenvolvendo component Button e Input
 - Desenvolvendo component TransactionTypeButton
+
+# Trabalhando com lib react-hook-form
+- https://react-hook-form.com/
+
+# Desenvolvendo com react-hook-form
+- Desenvolvendo Input controlado na past forms/InputForm
